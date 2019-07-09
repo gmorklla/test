@@ -1,20 +1,45 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
+<h4>Instrucciones:</h4>
+<ol>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    Crear un servicio que se encargue de hacer peticiones GET
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+    Crear componente (customSelect) al que se le pasará información
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    Hacer petición GET a través de servicio creado:
+    <span>http://lnxsapl1d.dev.unix.banorte.com:9080/wconfig-services/window/1464</span>
+    <div class="codeDiv">
+      <code [innerHTML]="windowI | htmlCode">
+      </code>
+    </div>
   </li>
-</ul>
-
+  <li>
+    Usar atributo style del primer elemento de array controls como estilo de un select dentro del componente creado
+    (customSelect)
+  </li>
+  <li>
+    Hacer petición GET a través de servicio creado:
+    <span>http://lnxsapl1d.dev.unix.banorte.com:9080/wconfig-services/catalog/inputvalue</span>
+    <div class="codeDiv">
+      <code [innerHTML]="validaciones | htmlCode">
+      </code>
+    </div>
+  </li>
+  <li>
+    Llenar select de customSelect con array de validaciones, mostrando sólo aquellas cuyo atributo "isAsync" sea igual a
+    0
+  </li>
+  <li>
+    Crear una forma dentro de customSelect (de preferencia usar reactive forms) que se llene con los campos del objeto
+    seleccionado [id, type, description, isAsync]
+  </li>
+  <li>
+    Permitir modificar solamente campo description (los demás campos deben permanecer inhabilitados)
+  </li>
+  <li>
+    Crear botón que permanezca inhabilitado hasta que se modifique el valor de la description y que capture los valores
+    de la forma una vez sea habilitado
+  </li>
+  <li>Mostrar valores de la forma</li>
+</ol>
