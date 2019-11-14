@@ -8,7 +8,7 @@
   </li>
   <li>
     Hacer petición GET a través de servicio creado:
-    <span>http://lnxsapl1d.dev.unix.banorte.com:9080/wconfig-services/window/1464</span>
+    <span>http://localhost:3000/window</span>
     <div class="codeDiv">
       <code [innerHTML]="windowI | htmlCode">
       </code>
@@ -20,7 +20,7 @@
   </li>
   <li>
     Hacer petición GET a través de servicio creado:
-    <span>http://lnxsapl1d.dev.unix.banorte.com:9080/wconfig-services/catalog/inputvalue</span>
+    <span>http://localhost:3000/catalogo</span>
     <div class="codeDiv">
       <code [innerHTML]="validaciones | htmlCode">
       </code>
@@ -43,3 +43,4 @@
   </li>
   <li>Mostrar valores de la forma</li>
 </ol>
+<app-custom-select></app-custom-select>
