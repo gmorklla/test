@@ -1,0 +1,10 @@
+
+<select class="form-control" id="" style="win">
+  <option
+    *ngFor="let option of (Options | pIsAsync)"
+    ngValue="option"
+  >
+    {{option.description}}-{{option.isAsync}}
+  </option>
+</select>
+

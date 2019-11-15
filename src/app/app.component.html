@@ -10,7 +10,7 @@
     Hacer petición GET a través de servicio creado:
     <span>http://lnxsapl1d.dev.unix.banorte.com:9080/wconfig-services/window/1464</span>
     <div class="codeDiv">
-      <code [innerHTML]="windowI | htmlCode">
+      <code [innerHTML]="windowI ">
       </code>
     </div>
   </li>
@@ -43,3 +43,5 @@
   </li>
   <li>Mostrar valores de la forma</li>
 </ol>
+
+<app-custom-select [Options]="catalogo" [Window]="window"></app-custom-select>
