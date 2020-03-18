@@ -8,6 +8,6 @@ import { HtmlCodePipe } from './htmlCode.pipe';
   declarations: [AppComponent, HtmlCodePipe],
   imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
